@@ -1,0 +1,408 @@
+/**
+ * Estilos para a parte pública do Barramento Tainacan
+ */
+
+/* Estilos gerais */
+.barramento-preservation-container {
+    margin: 20px 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+/* Status de preservação */
+.barramento-preservation-status {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    border: 1px solid #e9ecef;
+}
+
+/* Badge de status */
+.barramento-status-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 13px;
+    line-height: 1.4;
+    font-weight: 500;
+    background-color: #f0f0f1;
+}
+
+.barramento-status-badge.status-transfer_started,
+.barramento-status-badge.status-ingest_started,
+.barramento-status-badge.status-sip_created {
+    background-color: #e5f5fa;
+    color: #0071a1;
+}
+
+.barramento-status-badge.status-aip_stored,
+.barramento-status-badge.status-fully_preserved {
+    background-color: #edf7ed;
+    color: #2a8a31;
+}
+
+.barramento-status-badge.status-transfer_failed,
+.barramento-status-badge.status-ingest_failed {
+    background-color: #f9e2e2;
+    color: #b32d2e;
+}
+
+.barramento-status-badge.status-not_preserved {
+    background-color: #f6f7f7;
+    color: #50575e;
+}
+
+/* Detalhes de AIP */
+.barramento-preservation-details {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #e9ecef;
+}
+
+.barramento-aip-info {
+    margin: 5px 0;
+}
+
+.barramento-preservation-date {
+    margin: 5px 0;
+    color: #555;
+    font-size: 13px;
+}
+
+.barramento-external-link {
+    text-decoration: none;
+}
+
+.barramento-external-link .dashicons {
+    font-size: 14px;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+/* Detalhes de erro */
+.barramento-error-details {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #fff8e5;
+    border-left: 4px solid #ffb900;
+    color: #3c434a;
+}
+
+.barramento-error-message {
+    margin: 5px 0;
+}
+
+.barramento-retry-note {
+    margin: 5px 0;
+    font-style: italic;
+    font-size: 13px;
+}
+
+/* Indicador de progresso */
+.barramento-progress-details {
+    margin-top: 15px;
+}
+
+.barramento-progress-message {
+    margin-bottom: 10px;
+    font-style: italic;
+    font-size: 13px;
+    color: #555;
+}
+
+.barramento-progress-indicator {
+    margin-top: 10px;
+}
+
+.barramento-progress-bar {
+    height: 10px;
+    width: 100%;
+    background-color: #f0f0f1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.barramento-progress-value {
+    height: 100%;
+    width: 0;
+    background-color: #00a0d2;
+    transition: width 0.6s ease;
+}
+
+/* Detalhes técnicos */
+.barramento-technical-details {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    border: 1px solid #e9ecef;
+}
+
+.barramento-technical-details h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.barramento-technical-details h5 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.barramento-technical-table,
+.barramento-hashes-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+.barramento-technical-table th,
+.barramento-technical-table td,
+.barramento-hashes-table th,
+.barramento-hashes-table td {
+    text-align: left;
+    padding: 8px 10px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.barramento-technical-table th,
+.barramento-hashes-table th {
+    font-weight: 600;
+    background-color: #f0f0f1;
+}
+
+.barramento-hashes-table .hash-value {
+    font-family: monospace;
+    font-size: 12px;
+    word-break: break-all;
+}
+
+.barramento-hash-info {
+    font-size: 13px;
+    font-style: italic;
+    color: #555;
+}
+
+/* Tooltips */
+.barramento-tooltip {
+    display: inline-block;
+    position: relative;
+    cursor: help;
+}
+
+.barramento-tooltip-popup {
+    position: absolute;
+    z-index: 1000;
+    width: 200px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 12px;
+    text-align: center;
+    display: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.barramento-tooltip-popup:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+
+/* Seções colapsáveis */
+.barramento-collapsible-section {
+    margin-bottom: 15px;
+}
+
+.barramento-collapsible-header {
+    padding: 10px 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    position: relative;
+}
+
+.barramento-collapsible-header:hover {
+    background-color: #f0f0f1;
+}
+
+.barramento-collapsible-header .barramento-toggle-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.barramento-collapsible-content {
+    padding: 15px;
+    border: 1px solid #e9ecef;
+    border-top: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.barramento-collapsible-header.collapsed {
+    border-radius: 4px;
+}
+
+/* Status de coleção */
+.barramento-collection-status {
+    margin-bottom: 30px;
+}
+
+.barramento-collection-header {
+    margin-bottom: 15px;
+}
+
+.barramento-collection-title {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.barramento-collection-description {
+    margin: 0 0 10px 0;
+    color: #555;
+}
+
+.barramento-collection-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.barramento-stat-card {
+    flex: 1;
+    min-width: 100px;
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+.barramento-stat-card.preserved {
+    border-top: 3px solid #2a8a31;
+}
+
+.barramento-stat-card.in-process {
+    border-top: 3px solid #0071a1;
+}
+
+.barramento-stat-card.failed {
+    border-top: 3px solid #b32d2e;
+}
+
+.barramento-stat-value {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.barramento-stat-label {
+    font-size: 13px;
+    color: #555;
+}
+
+.barramento-progress-bar-container {
+    margin: 15px 0;
+}
+
+.barramento-progress-bar-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.barramento-progress-bar-label span {
+    font-size: 13px;
+    color: #555;
+}
+
+.barramento-progress-bar-full {
+    height: 15px;
+    background-color: #f0f0f1;
+    border-radius: 7.5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.barramento-progress-segment {
+    height: 100%;
+    float: left;
+}
+
+.barramento-progress-segment.preserved {
+    background-color: #2a8a31;
+}
+
+.barramento-progress-segment.in-process {
+    background-color: #0071a1;
+}
+
+.barramento-progress-segment.failed {
+    background-color: #b32d2e;
+}
+
+.barramento-progress-legend {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.barramento-legend-item {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #555;
+}
+
+.barramento-legend-color {
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    border-radius: 2px;
+}
+
+.barramento-legend-color.preserved {
+    background-color: #2a8a31;
+}
+
+.barramento-legend-color.in-process {
+    background-color: #0071a1;
+}
+
+.barramento-legend-color.failed {
+    background-color: #b32d2e;
+}
+
+/* Responsividade */
+@media screen and (max-width: 600px) {
+    .barramento-stat-card {
+        min-width: 100%;
+    }
+    
+    .barramento-collection-stats {
+        flex-direction: column;
+    }
+    
+    .barramento-technical-table,
+    .barramento-hashes-table {
+        display: block;
+        overflow-x: auto;
+    }
+}

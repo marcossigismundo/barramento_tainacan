@@ -1,0 +1,852 @@
+# Copyright (C) 2025 Barramento Tainacan
+# This file is distributed under the same license as the Barramento Tainacan package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Barramento Tainacan 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/barramento-tainacan\n"
+"POT-Creation-Date: 2025-03-31 12:00:00+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2025-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: barramento-tainacan.php:109
+msgid "O plugin Barramento Tainacan requer o plugin Tainacan instalado e ativado."
+msgstr ""
+
+#: admin/class-admin-menu.php:17
+#: admin/class-admin-menu.php:18
+msgid "Barramento Tainacan"
+msgstr ""
+
+#: admin/class-admin-menu.php:26
+#: admin/class-admin-menu.php:27
+msgid "Dashboard"
+msgstr ""
+
+#: admin/class-admin-menu.php:35
+#: admin/class-admin-menu.php:36
+msgid "Configurações"
+msgstr ""
+
+#: admin/class-admin-menu.php:44
+#: admin/class-admin-menu.php:45
+msgid "Coleções"
+msgstr ""
+
+#: admin/class-admin-menu.php:53
+#: admin/class-admin-menu.php:54
+msgid "Logs"
+msgstr ""
+
+#: admin/class-admin-menu.php:62
+#: admin/class-admin-menu.php:63
+msgid "Relatórios"
+msgstr ""
+
+#: admin/class-admin-settings.php:66
+msgid "Permissão negada."
+msgstr ""
+
+#: admin/class-admin-settings.php:73
+msgid "Parâmetros incompletos."
+msgstr ""
+
+#: admin/class-admin-settings.php:87
+msgid "Conexão estabelecida com sucesso!"
+msgstr ""
+
+#: admin/class-admin-settings.php:107
+msgid "ID de coleção inválido."
+msgstr ""
+
+#: admin/class-admin-settings.php:129
+msgid "Coleção adicionada à fila de processamento. %d itens identificados."
+msgstr ""
+
+#: admin/class-admin-settings.php:149
+msgid "Parâmetros inválidos."
+msgstr ""
+
+#: admin/class-admin-settings.php:162
+msgid "Item processado com sucesso."
+msgstr ""
+
+#: admin/class-admin-settings.php:182
+msgid "ID de objeto inválido."
+msgstr ""
+
+#: admin/class-admin-settings.php:195
+msgid "Status atualizado com sucesso."
+msgstr ""
+
+#: admin/views/dashboard.php:78
+msgid "Dashboard do Barramento Tainacan"
+msgstr ""
+
+#: admin/views/dashboard.php:83
+msgid "Sistema de Preservação Digital"
+msgstr ""
+
+#: admin/views/dashboard.php:85
+msgid "Este dashboard apresenta uma visão geral do processo de preservação digital integrado ao Archivematica."
+msgstr ""
+
+#: admin/views/dashboard.php:92
+msgid "O Archivematica não está configurado. Por favor, configure as credenciais em Configurações."
+msgstr ""
+
+#: admin/views/dashboard.php:93
+msgid "Configurar agora"
+msgstr ""
+
+#: admin/views/dashboard.php:102
+msgid "Total de Objetos"
+msgstr ""
+
+#: admin/views/dashboard.php:107
+msgid "Preservados"
+msgstr ""
+
+#: admin/views/dashboard.php:112
+msgid "Em Processamento"
+msgstr ""
+
+#: admin/views/dashboard.php:117
+msgid "Falhas"
+msgstr ""
+
+#: admin/views/dashboard.php:122
+msgid "Na Fila"
+msgstr ""
+
+#: admin/views/dashboard.php:128
+msgid "Ações Rápidas"
+msgstr ""
+
+#: admin/views/dashboard.php:130
+msgid "Gerenciar Coleções"
+msgstr ""
+
+#: admin/views/dashboard.php:133
+#: admin/views/dashboard.php:184
+msgid "Ver Todos os Logs"
+msgstr ""
+
+#: admin/views/dashboard.php:136
+msgid "Configurações"
+msgstr ""
+
+#: admin/views/dashboard.php:141
+msgid "Status da Fila"
+msgstr ""
+
+#: admin/views/dashboard.php:144
+msgid "Pendentes: %d"
+msgstr ""
+
+#: admin/views/dashboard.php:148
+msgid "Em processamento: %d"
+msgstr ""
+
+#: admin/views/dashboard.php:152
+msgid "Falhas: %d"
+msgstr ""
+
+#: admin/views/dashboard.php:156
+msgid "Processar Fila Agora"
+msgstr ""
+
+#: admin/views/dashboard.php:162
+msgid "Processo de Preservação"
+msgstr ""
+
+#: admin/views/dashboard.php:164
+msgid "Verificar Transferências"
+msgstr ""
+
+#: admin/views/dashboard.php:168
+msgid "Verificar Ingestões"
+msgstr ""
+
+#: admin/views/dashboard.php:178
+msgid "Atividades Recentes"
+msgstr ""
+
+#: admin/views/dashboard.php:183
+#: admin/views/logs.php:142
+msgid "Item"
+msgstr ""
+
+#: admin/views/dashboard.php:184
+#: admin/views/logs.php:143
+msgid "Coleção"
+msgstr ""
+
+#: admin/views/dashboard.php:185
+msgid "Status"
+msgstr ""
+
+#: admin/views/dashboard.php:186
+msgid "Data"
+msgstr ""
+
+#: admin/views/dashboard.php:192
+msgid "Nenhuma atividade recente encontrada."
+msgstr ""
+
+#: admin/views/dashboard.php:208
+#: admin/views/logs.php:151
+msgid "atrás"
+msgstr ""
+
+#: admin/views/dashboard.php:219
+msgid "Logs Recentes"
+msgstr ""
+
+#: admin/views/dashboard.php:224
+msgid "Nível"
+msgstr ""
+
+#: admin/views/dashboard.php:225
+msgid "Mensagem"
+msgstr ""
+
+#: admin/views/dashboard.php:231
+msgid "Nenhum log recente encontrado."
+msgstr ""
+
+#: admin/views/settings.php:38
+msgid "Configurações do Barramento Tainacan"
+msgstr ""
+
+#: admin/views/settings.php:43
+msgid "O plugin Tainacan não está ativo. O Barramento Tainacan requer o Tainacan para funcionar corretamente."
+msgstr ""
+
+#: admin/views/settings.php:50
+msgid "Geral"
+msgstr ""
+
+#: admin/views/settings.php:53
+msgid "Preservação"
+msgstr ""
+
+#: admin/views/settings.php:56
+msgid "Avançado"
+msgstr ""
+
+#: admin/views/settings.php:64
+msgid "Configurações do Archivematica Dashboard"
+msgstr ""
+
+#: admin/views/settings.php:65
+msgid "Configure as credenciais de acesso ao Archivematica Dashboard."
+msgstr ""
+
+#: admin/views/settings.php:68
+msgid "URL do Archivematica Dashboard"
+msgstr ""
+
+#: admin/views/settings.php:70
+msgid "URL completa do Archivematica Dashboard. Exemplo: https://archivematica.example.com"
+msgstr ""
+
+#: admin/views/settings.php:74
+#: admin/views/settings.php:97
+msgid "Usuário"
+msgstr ""
+
+#: admin/views/settings.php:79
+#: admin/views/settings.php:102
+msgid "Chave de API"
+msgstr ""
+
+#: admin/views/settings.php:81
+msgid "Chave de API gerada na interface do Archivematica Dashboard."
+msgstr ""
+
+#: admin/views/settings.php:85
+#: admin/views/settings.php:108
+msgid "Testar Conexão"
+msgstr ""
+
+#: admin/views/settings.php:93
+msgid "Configurações do Archivematica Storage Service"
+msgstr ""
+
+#: admin/views/settings.php:94
+msgid "Configure as credenciais de acesso ao Archivematica Storage Service."
+msgstr ""
+
+#: admin/views/settings.php:96
+msgid "URL do Storage Service"
+msgstr ""
+
+#: admin/views/settings.php:98
+msgid "URL completa do Archivematica Storage Service. Exemplo: https://storage.archivematica.example.com"
+msgstr ""
+
+#: admin/views/settings.php:104
+msgid "Chave de API gerada na interface do Archivematica Storage Service."
+msgstr ""
+
+#: admin/views/settings.php:120
+msgid "Configurações de Preservação"
+msgstr ""
+
+#: admin/views/settings.php:123
+msgid "Tamanho Máximo do SIP (MB)"
+msgstr ""
+
+#: admin/views/settings.php:125
+msgid "Tamanho máximo do pacote SIP em megabytes. Valor recomendado: 1024 (1GB)."
+msgstr ""
+
+#: admin/views/settings.php:129
+msgid "Frequência de Verificação Automática"
+msgstr ""
+
+#: admin/views/settings.php:135
+msgid "Com que frequência o sistema deve verificar automaticamente o status das transferências e ingestões."
+msgstr ""
+
+#: admin/views/settings.php:139
+msgid "Algoritmo de Hash"
+msgstr ""
+
+#: admin/views/settings.php:145
+msgid "Algoritmo utilizado para gerar hashes de verificação de integridade."
+msgstr ""
+
+#: admin/views/settings.php:149
+msgid "Tentativas de Reprocessamento"
+msgstr ""
+
+#: admin/views/settings.php:151
+msgid "Número de tentativas de reprocessamento em caso de falha. Zero para não tentar novamente."
+msgstr ""
+
+#: admin/views/settings.php:160
+msgid "Configurações Avançadas"
+msgstr ""
+
+#: admin/views/settings.php:165
+msgid "Ativar Modo de Depuração"
+msgstr ""
+
+#: admin/views/settings.php:167
+msgid "Ativa o registro detalhado de todas as operações no log. Useful para diagnosticar problemas."
+msgstr ""
+
+#: admin/views/settings.php:171
+msgid "Limpar Logs Antigos"
+msgstr ""
+
+#: admin/views/settings.php:174
+msgid "Remove logs com mais de 90 dias, exceto logs críticos."
+msgstr ""
+
+#: admin/views/settings.php:181
+msgid "Salvar Configurações"
+msgstr ""
+
+#: admin/views/reports.php:136
+msgid "Relatórios de Preservação Digital"
+msgstr ""
+
+#: admin/views/reports.php:144
+msgid "Exportar CSV"
+msgstr ""
+
+#: admin/views/reports.php:149
+msgid "Exportar JSON"
+msgstr ""
+
+#: admin/views/reports.php:154
+msgid "Imprimir"
+msgstr ""
+
+#: admin/views/reports.php:160
+msgid "Relatório gerado em: %s"
+msgstr ""
+
+#: admin/views/reports.php:168
+msgid "Sumário de Preservação Digital"
+msgstr ""
+
+#: admin/views/collections.php:80
+msgid "Gerenciamento de Coleções"
+msgstr ""
+
+#: admin/views/collections.php:84
+msgid "Erro ao carregar coleções do Tainacan"
+msgstr ""
+
+#: admin/views/collections.php:91
+msgid "Nenhuma coleção encontrada no Tainacan. Crie coleções no Tainacan antes de configurar a preservação."
+msgstr ""
+
+#: admin/views/collections.php:112
+msgid "Metadados"
+msgstr ""
+
+#: admin/views/collections.php:117
+msgid "Selecione quais coleções do Tainacan serão incluídas no processo de preservação digital."
+msgstr ""
+
+#: admin/views/collections.php:128
+msgid "Total de Itens"
+msgstr ""
+
+#: admin/views/collections.php:129
+msgid "Status de Preservação"
+msgstr ""
+
+#: admin/views/collections.php:130
+msgid "Ações"
+msgstr ""
+
+#: admin/views/collections.php:153
+msgid "%d preservados"
+msgstr ""
+
+#: admin/views/collections.php:154
+msgid "%d em processamento"
+msgstr ""
+
+#: admin/views/collections.php:155
+msgid "%d falhas"
+msgstr ""
+
+#: admin/views/collections.php:158
+msgid "%d de %d itens preservados"
+msgstr ""
+
+#: admin/views/collections.php:161
+msgid "Nenhum item processado"
+msgstr ""
+
+#: admin/views/collections.php:167
+msgid "Adicionar à Fila"
+msgstr ""
+
+#: admin/views/collections.php:170
+msgid "Habilite a coleção primeiro"
+msgstr ""
+
+#: admin/views/collections.php:176
+msgid "Salvar Configurações de Coleções"
+msgstr ""
+
+#: admin/views/collections.php:183
+msgid "Configure o mapeamento de metadados para Dublin Core e defina metadados obrigatórios para a preservação."
+msgstr ""
+
+#: admin/views/collections.php:190
+msgid "Metadados Obrigatórios"
+msgstr ""
+
+#: admin/views/collections.php:191
+msgid "Selecione quais metadados são obrigatórios para a preservação. Itens que não possuírem estes metadados preenchidos não serão preservados."
+msgstr ""
+
+#: admin/views/collections.php:198
+#: admin/views/collections.php:255
+msgid "Metadado"
+msgstr ""
+
+#: admin/views/collections.php:199
+msgid "Tipo"
+msgstr ""
+
+#: admin/views/collections.php:213
+msgid "Nenhum metadado encontrado nas coleções."
+msgstr ""
+
+#: admin/views/collections.php:233
+msgid "Mapeamento de Metadados para Dublin Core"
+msgstr ""
+
+#: admin/views/collections.php:234
+msgid "Mapeie os metadados do Tainacan para os elementos Dublin Core equivalentes. Este mapeamento será utilizado para gerar os metadados descritivos no pacote SIP."
+msgstr ""
+
+#: admin/views/collections.php:240
+msgid "Metadado Tainacan"
+msgstr ""
+
+#: admin/views/collections.php:241
+msgid "Elemento Dublin Core"
+msgstr ""
+
+#: admin/views/collections.php:247
+msgid "Não mapear"
+msgstr ""
+
+#: admin/views/collections.php:295
+msgid "Metadados Fixos"
+msgstr ""
+
+#: admin/views/collections.php:296
+msgid "Defina metadados fixos que serão incluídos em todos os pacotes SIP, independentemente dos metadados dos itens."
+msgstr ""
+
+#: admin/views/collections.php:318
+#: admin/views/collections.php:323
+msgid "Valor"
+msgstr ""
+
+#: admin/views/collections.php:319
+#: admin/views/collections.php:324
+msgid "Remover"
+msgstr ""
+
+#: admin/views/collections.php:330
+msgid "Adicionar Metadado Fixo"
+msgstr ""
+
+#: admin/views/collections.php:334
+msgid "Salvar Configurações de Metadados"
+msgstr ""
+
+#: admin/views/logs.php:77
+msgid "Logs do Barramento Tainacan"
+msgstr ""
+
+#: admin/views/logs.php:87
+msgid "Buscar nos logs..."
+msgstr ""
+
+#: admin/views/logs.php:91
+msgid "ID do Item"
+msgstr ""
+
+#: admin/views/logs.php:95
+msgid "ID da Coleção"
+msgstr ""
+
+#: admin/views/logs.php:99
+msgid "ID do Lote"
+msgstr ""
+
+#: admin/views/logs.php:103
+msgid "Filtrar"
+msgstr ""
+
+#: admin/views/logs.php:104
+msgid "Limpar"
+msgstr ""
+
+#: admin/views/logs.php:115
+msgid "ID"
+msgstr ""
+
+#: admin/views/logs.php:117
+msgid "Data"
+msgstr ""
+
+#: admin/views/logs.php:124
+msgid "Nenhum log encontrado."
+msgstr ""
+
+#: admin/views/logs.php:174
+msgid "%s item"
+msgid_plural "%s itens"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/views/logs.php:186
+msgid "Primeira página"
+msgstr ""
+
+#: admin/views/logs.php:190
+msgid "Página anterior"
+msgstr ""
+
+#: admin/views/logs.php:194
+msgid "Página atual"
+msgstr ""
+
+#: admin/views/logs.php:196
+msgid "de"
+msgstr ""
+
+#: admin/views/logs.php:199
+msgid "Próxima página"
+msgstr ""
+
+#: admin/views/logs.php:203
+msgid "Última página"
+msgstr ""
+
+#: includes/class-logger.php:140
+msgid "Todos os níveis"
+msgstr ""
+
+#: includes/class-hash-manager.php:51
+msgid "Arquivo não encontrado"
+msgstr ""
+
+#: includes/class-hash-manager.php:62
+msgid "Algoritmo de hash não suportado: %s"
+msgstr ""
+
+#: includes/class-hash-manager.php:71
+msgid "Falha ao gerar hash do arquivo"
+msgstr ""
+
+#: includes/class-hash-manager.php:93
+msgid "Diretório não encontrado"
+msgstr ""
+
+#: includes/class-hash-manager.php:104
+msgid "Algoritmo de hash não suportado: %s"
+msgstr ""
+
+#: includes/class-hash-manager.php:115
+msgid "Nenhum arquivo encontrado no diretório"
+msgstr ""
+
+#: includes/class-processor.php:97
+msgid "Esta coleção não está habilitada para preservação"
+msgstr ""
+
+#: includes/class-sip-generator.php:62
+msgid "Item inválido"
+msgstr ""
+
+#: includes/class-tainacan-api.php:25
+msgid "Repositório de coleções do Tainacan não disponível"
+msgstr ""
+
+#: includes/class-tainacan-api.php:113
+msgid "Repositório de itens do Tainacan não disponível"
+msgstr ""
+
+#: includes/class-tainacan-api.php:184
+msgid "Repositório de itens do Tainacan não disponível"
+msgstr ""
+
+#: includes/class-tainacan-api.php:194
+msgid "Item não encontrado"
+msgstr ""
+
+#: includes/class-tainacan-api.php:271
+msgid "Documento não disponível"
+msgstr ""
+
+#: includes/class-tainacan-api.php:277
+msgid "Arquivo não encontrado no sistema"
+msgstr ""
+
+#: includes/class-tainacan-api.php:290
+msgid "Falha ao copiar o arquivo"
+msgstr ""
+
+#: includes/class-validator.php:35
+msgid "Item inválido ou incompleto"
+msgstr ""
+
+#: includes/class-validator.php:43
+msgid "O item não possui documento principal"
+msgstr ""
+
+#: includes/class-validator.php:45
+msgid "O documento principal não possui arquivo associado"
+msgstr ""
+
+#: includes/class-validator.php:47
+msgid "O arquivo do documento principal não existe no sistema"
+msgstr ""
+
+#: includes/class-validator.php:56
+msgid "Metadado obrigatório \"%s\" não preenchido"
+msgstr ""
+
+#: includes/class-validator.php:70
+msgid "Item %d inválido para preservação: %s"
+msgstr ""
+
+#: includes/class-validator.php:168
+msgid "Diretório SIP não encontrado"
+msgstr ""
+
+#: includes/class-validator.php:190
+msgid "Diretórios obrigatórios ausentes: %s"
+msgstr ""
+
+#: includes/class-validator.php:195
+msgid "Arquivos obrigatórios ausentes: %s"
+msgstr ""
+
+#: includes/class-validator.php:202
+msgid "Diretório de objetos vazio"
+msgstr ""
+
+#: includes/class-validator.php:227
+msgid "Diretório SIP não encontrado"
+msgstr ""
+
+#: includes/class-validator.php:241
+msgid "Tamanho do SIP (%s) excede o limite configurado (%s MB)"
+msgstr ""
+
+#: public/views/preservation-status.php:41
+#: public/views/preservation-status.php:176
+msgid "Não preservado"
+msgstr ""
+
+#: public/views/preservation-status.php:56
+msgid "AIP ID:"
+msgstr ""
+
+#: public/views/preservation-status.php:69
+msgid "Preservado em:"
+msgstr ""
+
+#: public/views/preservation-status.php:81
+msgid "Motivo:"
+msgstr ""
+
+#: public/views/preservation-status.php:85
+msgid "Erro desconhecido"
+msgstr ""
+
+#: public/views/preservation-status.php:88
+msgid "Entre em contato com o administrador para reprocessar este item."
+msgstr ""
+
+#: public/views/preservation-status.php:96
+msgid "Processamento em andamento. Este processo pode levar algum tempo dependendo do tamanho dos arquivos."
+msgstr ""
+
+#: public/views/preservation-status.php:126
+msgid "SIP Criado"
+msgstr ""
+
+#: public/views/preservation-status.php:127
+msgid "Transferência Iniciada"
+msgstr ""
+
+#: public/views/preservation-status.php:128
+msgid "Falha na Transferência"
+msgstr ""
+
+#: public/views/preservation-status.php:129
+msgid "Ingestão Iniciada"
+msgstr ""
+
+#: public/views/preservation-status.php:130
+msgid "Falha na Ingestão"
+msgstr ""
+
+#: public/views/preservation-status.php:131
+msgid "AIP Armazenado"
+msgstr ""
+
+#: public/views/preservation-status.php:132
+msgid "Totalmente Preservado"
+msgstr ""
+
+#: public/views/preservation-status.php:165
+msgid "Detalhes Técnicos de Preservação"
+msgstr ""
+
+#: public/views/preservation-status.php:169
+msgid "ID SIP"
+msgstr ""
+
+#: public/views/preservation-status.php:173
+msgid "ID AIP"
+msgstr ""
+
+#: public/views/preservation-status.php:187
+msgid "Verificação de Integridade"
+msgstr ""
+
+#: public/views/preservation-status.php:191
+msgid "Arquivo"
+msgstr ""
+
+#: public/views/preservation-status.php:192
+msgid "Algoritmo"
+msgstr ""
+
+#: public/views/preservation-status.php:193
+msgid "Hash"
+msgstr ""
+
+#: public/views/preservation-status.php:194
+msgid "Tamanho"
+msgstr ""
+
+#: public/views/preservation-status.php:203
+msgid "Pacote completo"
+msgstr ""
+
+#: public/views/preservation-status.php:222
+msgid "Os hashes acima garantem a integridade dos arquivos no sistema de preservação."
+msgstr ""
+
+#: public/views/collection-status.php:50
+msgid "Status de Preservação da Coleção"
+msgstr ""
+
+#: public/views/collection-status.php:80
+msgid "Itens Preservados"
+msgstr ""
+
+#: public/views/collection-status.php:87
+msgid "Em Processamento"
+msgstr ""
+
+#: public/views/collection-status.php:94
+msgid "Falhas de Preservação"
+msgstr ""
+
+#: public/views/collection-status.php:113
+msgid "Progresso de Preservação"
+msgstr ""
+
+#: public/views/collection-status.php:115
+msgid "Concluído"
+msgstr ""
+
+#: public/views/collection-status.php:133
+msgid "Preservados (%d%%)"
+msgstr ""
+
+#: public/views/collection-status.php:139
+msgid "Em Processo (%d%%)"
+msgstr ""
+
+#: public/views/collection-status.php:145
+msgid "Falhas (%d%%)"
+msgstr ""
+
+#: public/views/collection-status.php:163
+msgid "Itens Recentes"
+msgstr ""
+
+#: public/views/collection-status.php:173
+msgid "Título"
+msgstr ""
+
+#: public/views/collection-status.php:174
+msgid "Status"
+msgstr ""
+
+#: public/views/collection-status.php:175
+msgid "Data"
+msgstr ""
+
+#: public/views/collection-status.php:181
+msgid "Nenhum item encontrado"
+msgstr ""
+
+#: public/views/collection-status.php:202
+msgid "Ver Detalhes"
+msgstr ""
