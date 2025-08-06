@@ -163,7 +163,7 @@ class Barramento_Tainacan_DB_Manager {
             KEY item_id (item_id),
             KEY hash_type (hash_type),
             KEY hash_value (hash_value(191)),
-            CONSTRAINT fk_object_id FOREIGN KEY (object_id) REFERENCES " . $this->table_prefix . "objects(id) ON DELETE CASCADE
+            CONSTRAINT fk_object_id FOREIGN KEY (object_id) REFERENCES {$this->table_prefix}objects(id) ON DELETE CASCADE
         ) $charset_collate;";
 
         require_once(ABSPATH . 'wp-admin/includes/upgrade.php');

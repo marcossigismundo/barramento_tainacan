@@ -238,7 +238,7 @@ class Barramento_Tainacan_Archivematica_API {
         );
         
         if ($method === 'POST' || $method === 'PUT') {
-            $args['body'] = json_encode($data);
+            $args['body'] = wp_json_encode($data);
         } elseif (!empty($data) && $method === 'GET') {
             $url = add_query_arg($data, $url);
         }

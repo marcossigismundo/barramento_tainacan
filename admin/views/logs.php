@@ -125,7 +125,7 @@ $base_url = admin_url('admin.php?page=barramento-tainacan-logs');
                                         <span class="dashicons dashicons-arrow-down-alt2"></span>
                                     </button>
                                     <div class="log-context" id="context-<?php echo esc_attr($log['id']); ?>" style="display: none;">
-                                        <pre><?php echo esc_html(json_encode($log['context'], JSON_PRETTY_PRINT)); ?></pre>
+                                        <pre><?php echo esc_html(wp_json_encode($log['context'], JSON_PRETTY_PRINT)); ?></pre>
                                     </div>
                                 <?php endif; ?>
                             </td>
