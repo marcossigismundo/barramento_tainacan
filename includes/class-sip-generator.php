@@ -141,7 +141,7 @@ class Barramento_Tainacan_SIP_Generator {
             file_put_contents($mets_file_path, $mets_metadata);
             
             // Gera um arquivo JSON com todos os metadados do Tainacan
-            $tainacan_json = json_encode($item, JSON_PRETTY_PRINT);
+            $tainacan_json = wp_json_encode($item, JSON_PRETTY_PRINT);
             $tainacan_json_path = trailingslashit($submissions_dir) . 'tainacan_metadata.json';
             file_put_contents($tainacan_json_path, $tainacan_json);
             
@@ -578,7 +578,7 @@ class Barramento_Tainacan_SIP_Generator {
             'sip_creation_date' => current_time('mysql'),
             'last_status_update' => current_time('mysql'),
             'batch_id' => $sip_info['batch_id'],
-            'notes' => json_encode($sip_info)
+            'notes' => wp_json_encode($sip_info)
         );
         
         $format = array(

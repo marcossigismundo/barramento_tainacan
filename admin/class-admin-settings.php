@@ -19,31 +19,107 @@ class Barramento_Tainacan_Admin_Settings {
      */
     public function register_settings() {
         // Grupo de configurações gerais
-        register_setting('barramento_general_settings', 'barramento_archivematica_url');
-        register_setting('barramento_general_settings', 'barramento_archivematica_user');
-        register_setting('barramento_general_settings', 'barramento_archivematica_api_key');
-        register_setting('barramento_general_settings', 'barramento_storage_service_url');
-        register_setting('barramento_general_settings', 'barramento_storage_service_user');
-        register_setting('barramento_general_settings', 'barramento_storage_service_api_key');
-        register_setting('barramento_general_settings', 'barramento_debug_mode');
+        register_setting(
+            'barramento_general_settings',
+            'barramento_archivematica_url',
+            array('sanitize_callback' => array($this, 'sanitize_url'))
+        );
+        register_setting(
+            'barramento_general_settings',
+            'barramento_archivematica_user',
+            array('sanitize_callback' => 'sanitize_text_field')
+        );
+        register_setting(
+            'barramento_general_settings',
+            'barramento_archivematica_api_key',
+            array('sanitize_callback' => 'sanitize_text_field')
+        );
+        register_setting(
+            'barramento_general_settings',
+            'barramento_storage_service_url',
+            array('sanitize_callback' => array($this, 'sanitize_url'))
+        );
+        register_setting(
+            'barramento_general_settings',
+            'barramento_storage_service_user',
+            array('sanitize_callback' => 'sanitize_text_field')
+        );
+        register_setting(
+            'barramento_general_settings',
+            'barramento_storage_service_api_key',
+            array('sanitize_callback' => 'sanitize_text_field')
+        );
+        register_setting(
+            'barramento_general_settings',
+            'barramento_debug_mode',
+            array('sanitize_callback' => array($this, 'sanitize_boolean'))
+        );
 
         // Grupo de configurações de preservação
-        register_setting('barramento_preservation_settings', 'barramento_max_sip_size');
-        register_setting('barramento_preservation_settings', 'barramento_schedule_frequency');
-        register_setting('barramento_preservation_settings', 'barramento_schedule_time');
-        register_setting('barramento_preservation_settings', 'barramento_hash_algorithm');
-        register_setting('barramento_preservation_settings', 'barramento_retry_attempts');
-        
+        register_setting(
+            'barramento_preservation_settings',
+            'barramento_max_sip_size',
+            array('sanitize_callback' => array($this, 'sanitize_int'))
+        );
+        register_setting(
+            'barramento_preservation_settings',
+            'barramento_schedule_frequency',
+            array('sanitize_callback' => 'sanitize_text_field')
+        );
+        register_setting(
+            'barramento_preservation_settings',
+            'barramento_schedule_time',
+            array('sanitize_callback' => 'sanitize_text_field')
+        );
+        register_setting(
+            'barramento_preservation_settings',
+            'barramento_hash_algorithm',
+            array('sanitize_callback' => 'sanitize_text_field')
+        );
+        register_setting(
+            'barramento_preservation_settings',
+            'barramento_retry_attempts',
+            array('sanitize_callback' => array($this, 'sanitize_int'))
+        );
+
         // Grupo de configurações de coleções
-        register_setting('barramento_collections_settings', 'barramento_enabled_collections');
-        register_setting('barramento_collections_settings', 'barramento_metadata_mapping');
-        register_setting('barramento_collections_settings', 'barramento_required_metadata');
-        register_setting('barramento_collections_settings', 'barramento_fixed_metadata');
-        
+        register_setting(
+            'barramento_collections_settings',
+            'barramento_enabled_collections',
+            array('sanitize_callback' => array($this, 'sanitize_ids'))
+        );
+        register_setting(
+            'barramento_collections_settings',
+            'barramento_metadata_mapping',
+            array('sanitize_callback' => array($this, 'sanitize_textarea'))
+        );
+        register_setting(
+            'barramento_collections_settings',
+            'barramento_required_metadata',
+            array('sanitize_callback' => array($this, 'sanitize_textarea'))
+        );
+        register_setting(
+            'barramento_collections_settings',
+            'barramento_fixed_metadata',
+            array('sanitize_callback' => array($this, 'sanitize_textarea'))
+        );
+
         // Grupo de configurações de relatórios
-        register_setting('barramento_reports_settings', 'barramento_public_page_enabled');
-        register_setting('barramento_reports_settings', 'barramento_public_page_slug');
-        register_setting('barramento_reports_settings', 'barramento_public_display_options');
+        register_setting(
+            'barramento_reports_settings',
+            'barramento_public_page_enabled',
+            array('sanitize_callback' => array($this, 'sanitize_boolean'))
+        );
+        register_setting(
+            'barramento_reports_settings',
+            'barramento_public_page_slug',
+            array('sanitize_callback' => array($this, 'sanitize_slug'))
+        );
+        register_setting(
+            'barramento_reports_settings',
+            'barramento_public_display_options',
+            array('sanitize_callback' => array($this, 'sanitize_textarea'))
+        );
     }
 
     /**
@@ -188,5 +264,68 @@ class Barramento_Tainacan_Admin_Settings {
             'message' => __('Status atualizado com sucesso.', 'barramento-tainacan'),
             'details' => $result
         ));
+    }
+
+    /**
+     * Sanitiza valores booleanos.
+     *
+     * @param mixed $value Valor a ser sanitizado.
+     * @return bool
+     */
+    public function sanitize_boolean( $value ) {
+        return (bool) $value;
+    }
+
+    /**
+     * Sanitiza inteiros.
+     *
+     * @param mixed $value Valor a ser sanitizado.
+     * @return int
+     */
+    public function sanitize_int( $value ) {
+        return absint( $value );
+    }
+
+    /**
+     * Sanitiza URLs.
+     *
+     * @param string $value Valor a ser sanitizado.
+     * @return string
+     */
+    public function sanitize_url( $value ) {
+        return esc_url_raw( $value );
+    }
+
+    /**
+     * Sanitiza arrays de IDs.
+     *
+     * @param mixed $value Valor a ser sanitizado.
+     * @return array
+     */
+    public function sanitize_ids( $value ) {
+        if ( ! is_array( $value ) ) {
+            $value = array();
+        }
+        return array_map( 'absint', $value );
+    }
+
+    /**
+     * Sanitiza textos longos/áreas de texto.
+     *
+     * @param string $value Valor a ser sanitizado.
+     * @return string
+     */
+    public function sanitize_textarea( $value ) {
+        return sanitize_textarea_field( $value );
+    }
+
+    /**
+     * Sanitiza slugs.
+     *
+     * @param string $value Valor a ser sanitizado.
+     * @return string
+     */
+    public function sanitize_slug( $value ) {
+        return sanitize_title( $value );
     }
 }

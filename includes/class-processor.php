@@ -511,9 +511,9 @@ class Barramento_Tainacan_Processor {
             if (!empty($object['notes'])) {
                 $notes = json_decode($object['notes'], true);
                 $notes['transfer_uuid'] = $additional_data['transfer_uuid'];
-                $data['notes'] = json_encode($notes);
+                $data['notes'] = wp_json_encode($notes);
             } else {
-                $data['notes'] = json_encode(array('transfer_uuid' => $additional_data['transfer_uuid']));
+                $data['notes'] = wp_json_encode(array('transfer_uuid' => $additional_data['transfer_uuid']));
             }
         }
         
@@ -634,7 +634,7 @@ class Barramento_Tainacan_Processor {
                         array(
                             'transfer_status' => 'COMPLETE',
                             'ingest_status' => 'started',
-                            'notes' => json_encode(array(
+                            'notes' => wp_json_encode(array(
                                 'transfer_uuid' => $transfer_uuid,
                                 'sip_uuid' => $transfer_status['sip_uuid']
                             ))
@@ -672,7 +672,7 @@ class Barramento_Tainacan_Processor {
                     'transfer_failed',
                     array(
                         'transfer_status' => $status,
-                        'notes' => json_encode(array(
+                        'notes' => wp_json_encode(array(
                             'transfer_uuid' => $transfer_uuid,
                             'message' => $transfer_status['message'] ?? 'Unknown error'
                         ))
@@ -763,7 +763,7 @@ class Barramento_Tainacan_Processor {
                             'ingest_status' => 'COMPLETE',
                             'aip_id' => $aip_info['uuid'],
                             'archivematica_url' => $aip_info['url'] ?? null,
-                            'notes' => json_encode(array(
+                            'notes' => wp_json_encode(array(
                                 'sip_uuid' => $sip_uuid,
                                 'aip_uuid' => $aip_info['uuid'],
                                 'aip_details' => $aip_info
@@ -803,7 +803,7 @@ class Barramento_Tainacan_Processor {
                     'ingest_failed',
                     array(
                         'ingest_status' => $status,
-                        'notes' => json_encode(array(
+                        'notes' => wp_json_encode(array(
                             'sip_uuid' => $sip_uuid,
                             'message' => $ingest_status['message'] ?? 'Unknown error'
                         ))
@@ -930,7 +930,7 @@ class Barramento_Tainacan_Processor {
                     array(
                         'transfer_status' => 'COMPLETE',
                         'ingest_status' => 'started',
-                        'notes' => json_encode(array(
+                        'notes' => wp_json_encode(array(
                             'transfer_uuid' => $status_data['uuid'] ?? $object['notes']['transfer_uuid'] ?? '',
                             'sip_uuid' => $status_data['sip_uuid']
                         ))
@@ -951,7 +951,7 @@ class Barramento_Tainacan_Processor {
                 'transfer_failed',
                 array(
                     'transfer_status' => $status,
-                    'notes' => json_encode(array(
+                    'notes' => wp_json_encode(array(
                         'transfer_uuid' => $status_data['uuid'] ?? $object['notes']['transfer_uuid'] ?? '',
                         'message' => $status_data['message'] ?? 'Unknown error'
                     ))
@@ -986,7 +986,7 @@ class Barramento_Tainacan_Processor {
                             'ingest_status' => 'COMPLETE',
                             'aip_id' => $aip_info['uuid'],
                             'archivematica_url' => $aip_info['url'] ?? null,
-                            'notes' => json_encode(array(
+                            'notes' => wp_json_encode(array(
                                 'sip_uuid' => $sip_uuid,
                                 'aip_uuid' => $aip_info['uuid'],
                                 'aip_details' => $aip_info
@@ -1011,7 +1011,7 @@ class Barramento_Tainacan_Processor {
                 'ingest_failed',
                 array(
                     'ingest_status' => $status,
-                    'notes' => json_encode(array(
+                    'notes' => wp_json_encode(array(
                         'sip_uuid' => $notes['sip_uuid'] ?? '',
                         'message' => $status_data['message'] ?? 'Unknown error'
                     ))

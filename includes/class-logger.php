@@ -58,7 +58,7 @@ class Barramento_Tainacan_Logger {
         $aip_id = isset($context['aip_id']) ? sanitize_text_field($context['aip_id']) : null;
         
         // Serializa o resto do contexto
-        $context_serialized = !empty($context) ? json_encode($context) : null;
+        $context_serialized = !empty($context) ? wp_json_encode($context) : null;
         
         // Insere o log no banco de dados
         $result = $wpdb->insert(
